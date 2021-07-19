@@ -1,0 +1,22 @@
+
+*for the first two, use Chinook
+
+
+1)Write a query to return the email, first name, last name, and Genre of all Rock Music listeners. Return your list ordered alphabetically by email address starting with A.
+
+2) find which artist has earned the most according to the InvoiceLines?
+
+3) Create two tables to model a shipping business. One table should be called orders and the other should be called shipments. The orders table should have an id, product name, amount. the shipping table should have a source country, destination country and product id as a foreign key. 
+1) insert some dummy data  i.e.
+(1,'basketball', 5.00)
+(2,'soccer', 6.00)
+(3,'football', 9.00)
+(4,'cricket bat', 20.00)
+
+#will also have prod id as a foreign key
+(1,'india', 'usa')
+(2,'vietnam', 'germany')
+(3,'croatia', 'france')
+(4,'france', 'usa')
+
+2) update the prod id of product 2 so that it also updates in the child table 
