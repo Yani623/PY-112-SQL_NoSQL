@@ -8,7 +8,7 @@ CREATE TABLE If Not Exists employees_audit (
     action VARCHAR(50) DEFAULT NULL
 );
 
-DROP TRIGGER before_employee_update ;
+DROP TRIGGER before_employee_update;
 
 CREATE TRIGGER before_employee_update 
     BEFORE UPDATE ON Employee
@@ -25,9 +25,9 @@ SHOW TRIGGERS;
 
 UPDATE Employee 
 SET 
-    lastName = 'Phan'
+    lastName = 'Adams2'
 WHERE
-    employeeId = 1711;
+    employeeId = '1';
     
 SELECT * FROM employees_audit;
 
