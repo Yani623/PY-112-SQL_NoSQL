@@ -48,13 +48,13 @@ mycursor.execute('''Create Table If Not Exists Countries
 (
 id                  int             Not Null  Auto_Increment  Primary Key,
 Country             varchar(250)    Not Null,
-Capital             carchar(250)    Not Null,
+Capital             varchar(250)    Not Null,
 Population          int             Not Null,
-Area (km^2)         decimal(50, 2)  Not Null,
-Population_Density  decimal(50,2)   Not Null;
+Area       decimal(50, 2)  Not Null,
+Population_Density  decimal(50,2)   Not Null);
 ''')
 
-mycursor.executemany('''Insert Into Table Countries (id, country, capital, population, area, population_density) Values (%s, %s, %s, %s, %s, %s)''', country_data)
+mycursor.executemany('''Insert Into Countries (id, country, capital, population, Area, population_density) Values (, %s, %s, %s, %s, %s)''', country_data)
 
 
 mydb.commit()
