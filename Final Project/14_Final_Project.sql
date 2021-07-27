@@ -39,4 +39,4 @@ Fields Enclosed By ';'
 Escaped By '"'
 Lines Terminated By '\r\n';
 
-show variables like '--secure-file-priv';
+SELECT @@secure_file_priv;
